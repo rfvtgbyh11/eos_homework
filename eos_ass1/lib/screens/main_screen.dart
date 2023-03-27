@@ -62,14 +62,15 @@ class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
                       height: 5.0,
                     ),
                     Text(
-                        isSignupScreen ? 'Signup to continue' : 'Signin to Continue',
+                        isSignupScreen ? 'Signup to continue' : 'Signin to continue',
                         style: TextStyle(
                             color: Colors.white, letterSpacing: 1.0)
                     )
                   ],),),)),
         Positioned(
             top: 150,
-            child: Container(
+            child: AnimatedContainer(
+              duration: Duration(milliseconds: 500,),
               height: isSignupScreen ? 320.0 : 280.0,
               padding: EdgeInsets.all(20),
               width: MediaQuery
@@ -198,11 +199,12 @@ class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
                                     ),),)
                               ]),))
                   ]),)),
-      Positioned(
-      top: isSignupScreen ? 430 : 390,
-      right: 0,
-      left: 0,
-      child: Center(
+      AnimatedPositioned(
+        duration: Duration(milliseconds: 500,),
+        top: isSignupScreen ? 430 : 390,
+        right: 0,
+        left: 0,
+        child: Center(
           child: Container(
               padding: EdgeInsets.all(20), height: 90, width: 90,
               decoration: BoxDecoration(
