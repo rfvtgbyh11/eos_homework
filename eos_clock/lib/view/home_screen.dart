@@ -29,13 +29,13 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Spacer(flex: 1),
-            Image.asset('assets/images/eos_logo.png'),
+            Spacer(flex: 2),
+            Image.asset('assets/images/eos_logo.png', width: 300, height: 300,),
             Spacer(flex: 1),
             ClockWidget(),
-            Spacer(flex: 1),
+            Spacer(flex: 7),
           ],
         )
       )
